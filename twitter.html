@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./twitter.png" type="image/x-icon" class="img-fluid">
+    <style>
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        .note, .post{
+            border: none;
+            border-radius: 14px;
+            font-size: large;
+            font-weight: 400;
+            font-style: italic;
+            font-family: cursive;
+            background-color: #e7ecf0;
+        }
+        .note{
+            height: 240px;
+            width: 570px;
+        }
+        .post{
+            height: 130px;
+            width: 440px;
+        }
+        button{
+            color: white;
+            height: 42px;
+            width: 144px;
+            padding: 4px 2px;
+            border-radius: 24px;
+            border: none;
+        }
+        .tweetBtn{
+            background-color: #1da1f3;
+        }
+        .limit{
+            background-color: pink;
+        }
+        .clearr{
+            background-color: rgb(250, 250, 47);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row d-flex align-items-center p-2">
+                <div class="col-lg-4">
+                    <img src="./logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <h2>Tweet kro ?</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col d-flex justify-content-center">
+                    <input type="text" placeholder="What's happening ?" class="note">
+                </div>
+                <div class="d-flex gap-3 justify-content-center mt-3 mb-4">
+                    <button class="tweetBtn">Tweet</button>
+                    <button class="clearr">Clear</button>
+                    <button class="limit">limited</button>
+                </div>
+                <div class="col d-flex justify-content-center mt-4">
+                    <input type="text" placeholder="posts" class="post">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./tweet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
